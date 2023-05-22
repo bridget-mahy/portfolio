@@ -1,0 +1,29 @@
+
+  .glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border:0.5px solid rgba(255, 255, 255, 0.18);
+    border-radius: 2px;
+    box-shadow: 0 8px 15px 0 rgb(0, 0, 0, 0.2);
+}
+
+.hover:hover{
+  text-shadow: 1px 1px 15px #f771b4;
+}
+
+.textshadow{
+  text-shadow: 0 0 1em #bbdefb, 1px 1px 20px #bbdefb
+}
+
+.pinkshadow{
+  text-shadow: 1px 1px 15px #f771b4;
+}
+
+.whitetextshadow{
+  text-shadow: 1px 1px 15px #201f20, 1px 1px 15px #201f20, 1px 1px 15px #201f20
+}
+
+.pshadow {
+  text-shadow: 0 0 8px #ffffff, 0 0 8px #ffffff
+}
