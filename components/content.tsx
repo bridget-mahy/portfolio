@@ -84,7 +84,7 @@ export default function Content() {
                   <Github isLight nav={false} />
                 </a>
                 <a
-                  href="https://gallerina-railway.up.railway.app/"
+                  href="https://gallerinaa.up.railway.app/"
                   className="absolute z-30 top-2"
                   target="_blank"
                 >
