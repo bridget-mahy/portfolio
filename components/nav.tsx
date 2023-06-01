@@ -16,7 +16,7 @@ export default function Nav() {
         <div className="flex items-end">
           <a
             href=""
-            className={`${styles.hover} z-20 text-slate-700 opacity-60 text-2xl md:text-3xl font-Roboto font-light tracking-wide`}
+            className={`${styles.hover} z-20 text-slate-700 opacity-60 text-2xl md:text-3xl font-Roboto font-light md:font-thin tracking-wide`}
           >
             Bridget Mahy
           </a>
