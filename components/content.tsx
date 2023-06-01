@@ -9,7 +9,7 @@ export default function Content() {
       <div
         className={`${styles.glass} scroll-smooth overflow-y-visible overflow-x-clip min-h-screen w-11/12 md:w-10/12`}
       >
-        <div className="md:mx-20 mx-10 h-full sm:w-11/12 md:w-5/6">
+        <div className="md:mx-20 mx-5 h-full sm:w-11/12 md:w-5/6">
           <h2
             id="Work"
             className={`font-Header font-light tracking-wide mix-blend-color-burn text-black opacity-50 py-5 pt-28 text-3xl`}

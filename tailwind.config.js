@@ -14,9 +14,7 @@ module.exports = {
       },
       fontFamily: {
         Header: ['Epilogue', 'sans-serif'],
-        Sigmar: ['Sigmar One', 'cursive'],
         Titling: ['Castoro Titling', 'serif'],
-        Instrument: ['Instrument Serif', 'serif'],
         Playfair: ['Playfair Display', 'serif'],
         Roboto: ['Roboto', 'sans-serif'],
       },

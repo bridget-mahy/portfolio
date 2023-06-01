@@ -66,7 +66,7 @@ export default function Contact() {
     <>
       <div className="pt-10 w-full h-full">
         <motion.div
-          className="blur h-1/5 w-5/6 md:w-2/3"
+          className="blur h-1/6 w-11/12 md:w-2/3"
           animate={{ backgroundColor: colors }}
           transition={{ duration: 20, repeat: Infinity, repeatType: 'reverse' }}
           style={{ opacity: 0.4, position: 'absolute' }}

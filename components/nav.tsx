@@ -1,10 +1,14 @@
 import { Github, Linkedin } from './svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars, faX } from '@fortawesome/free-solid-svg-icons'
+import FullscreenNav from './mobilenav'
 import styles from './content.module.css'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 
 export default function Nav() {
   const [expand, setExpand] = useState(false)
+  const [open, setOpen] = useState(false)
 
   return (
     <>
@@ -12,12 +16,12 @@ export default function Nav() {
         <div className="flex items-end">
           <a
             href=""
-            className={`${styles.hover} z-20 text-slate-700 opacity-60 text-3xl font-Roboto font-light tracking-wide`}
+            className={`${styles.hover} z-20 text-slate-700 opacity-60 text-2xl md:text-3xl font-Roboto font-light tracking-wide`}
           >
             Bridget Mahy
           </a>
           <button
-            className={`opacity-60 text-3xl font-Roboto font-light tracking-wide ${
+            className={`opacity-60 text-3xl font-Roboto font-light hidden md:block tracking-wide ${
               expand ? 'text-black' : 'text-slate-700'
             }`}
             onClick={() => setExpand(!expand)}
@@ -51,7 +55,7 @@ export default function Nav() {
             </motion.div>
           )}
         </div>
-        <div className="flex items-center">
+        <div className="md:flex items-center hidden">
           <a
             href="/BridgetMahy-Resume.pdf"
             download="bmahy.pdf"
@@ -63,6 +67,17 @@ export default function Nav() {
             <Github isLight={false} nav={true} />
           </a>
           <Linkedin />
+        </div>
+        {/* <div> hamburger button goes here? </div> */}
+        <div className="md:hidden block slate-700 font-thin">
+          <button onClick={() => setOpen(!open)}>
+            {' '}
+            <FontAwesomeIcon
+              className="text-2xl opacity-60"
+              icon={open ? faX : faBars}
+            />
+          </button>
+          {open && <FullscreenNav onClose={() => setOpen(false)} />}
         </div>
       </div>
     </>

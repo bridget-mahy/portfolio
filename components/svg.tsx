@@ -7,14 +7,14 @@ interface Props {
 
 export function Github({ isLight, nav }: Props) {
   return (
-    <div className="group relative">
+    <div className="group md:relative">
       {nav && (
         <div className="hidden group-hover:block bg-pink-200 left-1 margin opacity-60 p-3 blur absolute inset-0"></div>
       )}
       <svg
         className={`w-8 h-8 m-2 fill-current ${
           isLight
-            ? 'md:text-blue-100 z-30 md:hover:text-sky-50 text-slate-700 opacity-60'
+            ? 'md:text-blue-100 z-30 md:hover:text-sky-50 text-slate-700'
             : `opacity-60 text-slate-700 ${!nav && 'hover:text-slate-900'}`
         }`}
         viewBox="0 0 48 48"
@@ -32,11 +32,11 @@ export function Github({ isLight, nav }: Props) {
 
 export function Web({ isLight, nav }: Props) {
   return (
-    <div className="group relative">
+    <div className="group md:relative">
       <svg
         className={`stroke-current absolute mx-2 my-1 left-10 h-10 w-10 ${
           isLight
-            ? 'md:text-blue-100 z-30 md:hover:text-sky-50 text-slate-700 opacity-60'
+            ? 'md:text-blue-100 z-30 md:hover:text-sky-50 md:opacity-100 text-slate-700 opacity-60'
             : 'opacity-60 text-slate-700 hover:text-slate-900'
         }`}
         fill="none"
