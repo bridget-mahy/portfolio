@@ -7,9 +7,9 @@ export default function Content() {
   return (
     <>
       <div
-        className={`${styles.glass} scroll-smooth overflow-y-visible overflow-x-clip min-h-screen w-5/6 md:w-10/12`}
+        className={`${styles.glass} scroll-smooth overflow-y-visible overflow-x-clip min-h-screen w-11/12 md:w-10/12`}
       >
-        <div className="md:mx-20 mx-10 h-full md:w-5/6">
+        <div className="md:mx-20 mx-10 h-full sm:w-11/12 md:w-5/6">
           <h2
             id="Work"
             className={`font-Header font-light tracking-wide mix-blend-color-burn text-black opacity-50 py-5 pt-28 text-3xl`}
@@ -19,7 +19,7 @@ export default function Content() {
           <div className="flex flex-col gap-28 md:gap-48">
             {/* first project */}
             <div className="md:flex">
-              <div className="md:relative md:w-1/2 mb-14 grid">
+              <div className="md:relative md:w-1/2 mb-14">
                 <Image
                   src="/images/todos.gif"
                   width={1000}
@@ -29,14 +29,14 @@ export default function Content() {
                 />
                 <a
                   href="https://github.com/bridget-mahy/todo-fullstack"
-                  className="absolute z-30"
+                  className="absolute z-30 mt-1"
                   target="_blank"
                 >
                   <Github isLight={false} nav={false} />
                 </a>
                 <a
                   href="https://bmahy-fullstack-todo.up.railway.app/"
-                  className="absolute z-30"
+                  className="absolute z-30 mt-1"
                   target="_blank"
                 >
                   <Web isLight={false} nav={false} />
@@ -56,7 +56,7 @@ export default function Content() {
                   To Do App
                 </h2>
                 <p
-                  className={`${styles.pshadow} pt-2 md:pt-1 text-lg font-light text-black outline-1 outline-white`}
+                  className={`${styles.pshadow} pt-2 md:pt-1 md:text-lg font-light text-black outline-1 outline-white`}
                 >
                   This full stack app allows users to manage their own to-do
                   list. I utilised React, Redux and Express with Typescript as
@@ -79,14 +79,14 @@ export default function Content() {
                 />
                 <a
                   href="https://github.com/bridget-mahy/gallerina"
-                  className="absolute z-30 md:top-2"
+                  className="absolute z-30 md:top-2 mt-1"
                   target="_blank"
                 >
                   <Github isLight nav={false} />
                 </a>
                 <a
                   href="https://gallerinaa.up.railway.app/"
-                  className="absolute z-30 md:top-2"
+                  className="absolute z-30 md:top-2 mt-1"
                   target="_blank"
                 >
                   <Web isLight nav={false} />
@@ -106,7 +106,7 @@ export default function Content() {
                   Gallerina
                 </h2>
                 <p
-                  className={`${styles.pshadow} pt-2 md:pt-1 font-light text-black text-lg`}
+                  className={`${styles.pshadow} pt-2 md:pt-1 font-light text-black md:text-lg`}
                 >
                   Gallerina is a pinterest-like app which allows users to curate
                   their own art collections. This app was created using the
@@ -138,14 +138,14 @@ export default function Content() {
                 <div className="relative">
                   <a
                     href="https://github.com/bridget-mahy/sampler-project"
-                    className="absolute z-40 md:top-2"
+                    className="absolute z-40 md:top-2 mt-1"
                     target="_blank"
                   >
                     <Github isLight nav={false} />
                   </a>
                   <a
                     href="https://bridget-mahy.github.io/sampler-project/"
-                    className="absolute z-30 md:top-2"
+                    className="absolute z-30 md:top-2 mt-1"
                     target="_blank"
                   >
                     <Web isLight nav={false} />
@@ -166,7 +166,7 @@ export default function Content() {
                   Sampler Project
                 </h2>
                 <p
-                  className={`${styles.pshadow} pt-2 md:pt-1 text-lg font-light text-black`}
+                  className={`${styles.pshadow} pt-2 md:pt-1 md:text-lg font-light text-black`}
                 >
                   This was a project I made at the beginning of my coding
                   bootcamp when we were given free reign to make a &quot;fun or
@@ -192,14 +192,14 @@ export default function Content() {
                 />
                 <a
                   href="https://github.com/bridget-mahy/nextjs-blog"
-                  className="absolute z-30"
+                  className="absolute z-30 mt-1"
                   target="_blank"
                 >
                   <Github isLight={false} nav={false} />
                 </a>
                 <a
                   href="https://nextjs-blog-two-lilac-76.vercel.app/"
-                  className="absolute z-30"
+                  className="absolute z-30 mt-1"
                   target="_blank"
                 >
                   <Web isLight={false} nav={false} />
@@ -220,7 +220,7 @@ export default function Content() {
                   Next JS Blog
                 </h2>
                 <p
-                  className={`${styles.pshadow} pt-2 md:pt-1 font-light text-lg text-black`}
+                  className={`${styles.pshadow} pt-2 md:pt-1 font-light md:text-lg text-black`}
                 >
                   This app was created using the NextJS Foundations tutorial. I
                   played around with different elements and features in Next
@@ -244,7 +244,7 @@ export default function Content() {
           </h1>
           <div className="md:flex md:justify-between">
             <p
-              className={`${styles.pinkshadow} font-light text-black mr-5 mb-5 text-lg`}
+              className={`${styles.pinkshadow} font-light text-black mr-5 mb-5 md:text-lg`}
             >
               My name is Bridget. I am a web developer moving to Melbourne Aus.
             </p>
