@@ -7,24 +7,25 @@ export default function Content() {
   return (
     <>
       <div
-        className={`${styles.glass} scroll-smooth overflow-y-auto min-h-screen w-10/12`}
+        className={`${styles.glass} scroll-smooth overflow-y-visible overflow-x-clip min-h-screen w-5/6 md:w-10/12`}
       >
-        <div className="mx-20 h-full w-5/6">
+        <div className="md:mx-20 mx-10 h-full md:w-5/6">
           <h2
             id="Work"
             className={`font-Header font-light tracking-wide mix-blend-color-burn text-black opacity-50 py-5 pt-28 text-3xl`}
           >
             WORK
           </h2>
-          <div className="flex flex-col gap-48">
-            <div className="flex">
-              <div className="relative w-1/2">
+          <div className="flex flex-col gap-28 md:gap-48">
+            {/* first project */}
+            <div className="md:flex">
+              <div className="md:relative md:w-1/2 mb-14 grid">
                 <Image
                   src="/images/todos.gif"
                   width={1000}
                   height={1000}
                   alt="todos-project"
-                  className="object-cover h-60 absolute"
+                  className="object-cover h-60 md:absolute"
                 />
                 <a
                   href="https://github.com/bridget-mahy/todo-fullstack"
@@ -45,17 +46,17 @@ export default function Content() {
                   alt="todos-project"
                   width={1000}
                   height={1000}
-                  className="object-cover grayscale h-60 absolute z-10 hover:opacity-0"
+                  className="object-cover grayscale h-60 hidden md:block md:absolute z-10 hover:opacity-0"
                 />
               </div>
-              <div className="w-2/3 ml-10">
+              <div className="md:w-2/3 md:ml-10">
                 <h2
                   className={`font-Header font-thin text-black opacity-50 ${styles.textshadow} text-2xl`}
                 >
                   To Do App
                 </h2>
                 <p
-                  className={`${styles.pshadow} font-light opacity-70 text-black`}
+                  className={`${styles.pshadow} pt-2 md:pt-1 text-lg font-light text-black outline-1 outline-white`}
                 >
                   This full stack app allows users to manage their own to-do
                   list. I utilised React, Redux and Express with Typescript as
@@ -67,45 +68,45 @@ export default function Content() {
               </div>
             </div>
             {/* NEW PROJECT -- Gallerina */}
-            <div className="flex">
-              <div className="relative w-1/2">
+            <div className="md:flex">
+              <div className="md:relative md:w-1/2 mb-14">
                 <Image
                   src="/images/gallerina.gif"
                   width={1000}
                   height={1000}
-                  alt="todos-project"
-                  className="object-cover top-2 h-64 absolute"
+                  alt="gallerina"
+                  className="object-cover md:top-2 h-64 md:h-72 md:absolute"
                 />
                 <a
                   href="https://github.com/bridget-mahy/gallerina"
-                  className="absolute z-30 top-2"
+                  className="absolute z-30 md:top-2"
                   target="_blank"
                 >
                   <Github isLight nav={false} />
                 </a>
                 <a
                   href="https://gallerinaa.up.railway.app/"
-                  className="absolute z-30 top-2"
+                  className="absolute z-30 md:top-2"
                   target="_blank"
                 >
                   <Web isLight nav={false} />
                 </a>
                 <Image
                   src="/images/gallerina.png"
-                  alt="todos-project"
+                  alt="gallerina gif"
                   width={1000}
                   height={1000}
-                  className="object-cover grayscale h-64 top-2 absolute z-10 hover:opacity-0"
+                  className="object-cover grayscale hidden md:block h-72 top-2 absolute z-10 hover:opacity-0"
                 />
               </div>
-              <div className="w-2/3 ml-10">
+              <div className="md:w-2/3 md:ml-10">
                 <h2
                   className={`font-Header font-thin text-black opacity-50 ${styles.textshadow} text-2xl`}
                 >
                   Gallerina
                 </h2>
                 <p
-                  className={`${styles.pshadow} font-light opacity-70 text-black`}
+                  className={`${styles.pshadow} pt-2 md:pt-1 font-light text-black text-lg`}
                 >
                   Gallerina is a pinterest-like app which allows users to curate
                   their own art collections. This app was created using the
@@ -125,26 +126,26 @@ export default function Content() {
             </div>
             {/* END OF Gallerina */}
             {/* keyboard PROJECT */}
-            <div className="flex -mt-20">
-              <div className="relative w-1/2">
+            <div className="md:flex md:-mt-20">
+              <div className="md:relative md:w-1/2 mb-14">
                 <Image
                   src="/images/keyboard32.gif"
                   width={1000}
                   height={1000}
                   alt="keyboard-project"
-                  className="object-cover h-60 top-2 absolute"
+                  className="object-cover h-60 md:top-2 md:absolute"
                 />
                 <div className="relative">
                   <a
                     href="https://github.com/bridget-mahy/sampler-project"
-                    className="absolute z-40 top-2"
+                    className="absolute z-40 md:top-2"
                     target="_blank"
                   >
                     <Github isLight nav={false} />
                   </a>
                   <a
                     href="https://bridget-mahy.github.io/sampler-project/"
-                    className="absolute z-30 top-2"
+                    className="absolute z-30 md:top-2"
                     target="_blank"
                   >
                     <Web isLight nav={false} />
@@ -155,17 +156,17 @@ export default function Content() {
                   alt="keyboard-project"
                   width={1000}
                   height={1000}
-                  className="object-cover grayscale h-60 top-2 absolute z-10 hover:opacity-0"
+                  className="object-cover grayscale h-60 top-2 hidden md:block md:absolute z-10 hover:opacity-0"
                 />
               </div>
-              <div className="w-2/3 ml-10">
+              <div className="md:w-2/3 md:ml-10">
                 <h2
                   className={`${styles.textshadow} font-Header font-thin text-2xl tracking-wide text-black opacity-50 `}
                 >
                   Sampler Project
                 </h2>
                 <p
-                  className={`${styles.pshadow} font-light opacity-70 text-black`}
+                  className={`${styles.pshadow} pt-2 md:pt-1 text-lg font-light text-black`}
                 >
                   This was a project I made at the beginning of my coding
                   bootcamp when we were given free reign to make a &quot;fun or
@@ -180,14 +181,14 @@ export default function Content() {
             </div>
 
             {/* NEW PROJECT -- LAST ITEM */}
-            <div className="flex -mt-15">
-              <div className="relative w-1/2">
+            <div className="md:flex">
+              <div className="md:relative md:w-1/2 mb-14">
                 <Image
                   src="/images/nextblog.gif"
                   width={1000}
                   height={1000}
                   alt="todos-project"
-                  className="object-cover h-64 absolute"
+                  className="object-cover h-64 md:absolute"
                 />
                 <a
                   href="https://github.com/bridget-mahy/nextjs-blog"
@@ -208,18 +209,18 @@ export default function Content() {
                   alt="todos-project"
                   width={1000}
                   height={1000}
-                  className="object-cover grayscale h-64 absolute z-10 hover:opacity-0"
+                  className="object-cover grayscale h-64 hidden md:block md:absolute z-10 hover:opacity-0"
                 />
               </div>
 
-              <div className="w-2/3 ml-10">
+              <div className="md:w-2/3 md:ml-10">
                 <h2
                   className={`font-Header font-thin text-black opacity-50 ${styles.textshadow} text-2xl`}
                 >
                   Next JS Blog
                 </h2>
                 <p
-                  className={`${styles.pshadow} font-light opacity-70 text-black`}
+                  className={`${styles.pshadow} pt-2 md:pt-1 font-light text-lg text-black`}
                 >
                   This app was created using the NextJS Foundations tutorial. I
                   played around with different elements and features in Next
@@ -241,8 +242,10 @@ export default function Content() {
           >
             ABOUT
           </h1>
-          <div className="flex justify-between">
-            <p className={`${styles.pinkshadow} font-light text-black`}>
+          <div className="md:flex md:justify-between">
+            <p
+              className={`${styles.pinkshadow} font-light text-black mr-5 mb-5 text-lg`}
+            >
               My name is Bridget. I am a web developer moving to Melbourne Aus.
             </p>
             <Image

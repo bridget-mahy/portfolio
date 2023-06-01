@@ -64,9 +64,9 @@ export default function Contact() {
   // needs to be a form that sends an email to me with a submit button
   return (
     <>
-      <div className="pt-10 pb-20 w-full h-full">
+      <div className="pt-10 w-full h-full">
         <motion.div
-          className="blur h-1/5 w-2/3"
+          className="blur h-1/5 w-5/6 md:w-2/3"
           animate={{ backgroundColor: colors }}
           transition={{ duration: 20, repeat: Infinity, repeatType: 'reverse' }}
           style={{ opacity: 0.4, position: 'absolute' }}
@@ -76,7 +76,7 @@ export default function Contact() {
           className="p-6 pb-20 flex flex-col justify-center items-start gap-y-10"
           onSubmit={sendEmail}
         >
-          <div className="flex flex-col gap-4 relative w-1/2">
+          <div className="flex flex-col gap-4 relative w-full md:w-1/2">
             <h1
               className="text-3xl font-Header text-slate-700 opacity-60"
               id="Contact"
@@ -105,7 +105,7 @@ export default function Contact() {
             </label>
             <input
               required
-              className="p-1 font-Roboto font-thin outline-none bg-white rounded-sm"
+              className="p-1 font-Roboto font-thin md:text-md outline-none bg-white rounded-sm"
               type="text"
               name="contact"
               value={formData.contact}

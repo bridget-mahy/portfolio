@@ -55,7 +55,7 @@ export default function Nav() {
           <a
             href="/BridgetMahy-Resume.pdf"
             download="bmahy.pdf"
-            className={`${styles.hover}  text-slate-700 opacity-60 font-Playfair font-black m-2`}
+            className={`${styles.hover} text-slate-700 opacity-60 font-Header font-black my-2`}
           >
             CV
           </a>

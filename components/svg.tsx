@@ -14,8 +14,8 @@ export function Github({ isLight, nav }: Props) {
       <svg
         className={`w-8 h-8 m-2 fill-current ${
           isLight
-            ? 'text-blue-100 z-30 hover:text-sky-50'
-            : `opacity-60 text-slate-700 ${!nav && ' hover:text-slate-900'}`
+            ? 'md:text-blue-100 z-30 md:hover:text-sky-50 text-slate-700 opacity-60'
+            : `opacity-60 text-slate-700 ${!nav && 'hover:text-slate-900'}`
         }`}
         viewBox="0 0 48 48"
         xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +36,7 @@ export function Web({ isLight, nav }: Props) {
       <svg
         className={`stroke-current absolute mx-2 my-1 left-10 h-10 w-10 ${
           isLight
-            ? 'text-blue-100 hover:text-sky-50'
+            ? 'md:text-blue-100 z-30 md:hover:text-sky-50 text-slate-700 opacity-60'
             : 'opacity-60 text-slate-700 hover:text-slate-900'
         }`}
         fill="none"
