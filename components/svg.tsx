@@ -14,7 +14,7 @@ export function Github({ isLight, nav }: Props) {
       <svg
         className={`w-8 h-8 m-2 fill-current ${
           isLight
-            ? 'md:text-blue-100 z-30 md:hover:text-sky-50 text-slate-700'
+            ? 'md:text-blue-100 z-30 md:hover:text-sky-50 md:opacity-100 opacity-60 text-slate-700'
             : `opacity-60 text-slate-700 ${!nav && 'hover:text-slate-900'}`
         }`}
         viewBox="0 0 48 48"
