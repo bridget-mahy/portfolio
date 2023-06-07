@@ -6,7 +6,7 @@ import Contact from './contact'
 export default function Content() {
   return (
     <>
-      <div
+      <main
         className={`${styles.glass} scroll-smooth overflow-y-visible overflow-x-clip min-h-screen w-11/12 md:w-10/12`}
       >
         <div className="md:mx-20 mx-5 h-full sm:w-11/12 md:w-5/6">
@@ -24,7 +24,7 @@ export default function Content() {
                   src="/images/todos.gif"
                   width={1000}
                   height={1000}
-                  alt="todos-project"
+                  alt="todos project gif"
                   className="object-cover h-60 md:absolute"
                 />
                 <a
@@ -43,7 +43,7 @@ export default function Content() {
                 </a>
                 <Image
                   src="/images/todos.jpeg"
-                  alt="todos-project"
+                  alt="todos project"
                   width={1000}
                   height={1000}
                   className="object-cover grayscale h-60 hidden md:block md:absolute z-10 hover:opacity-0"
@@ -74,7 +74,7 @@ export default function Content() {
                   src="/images/gallerina.gif"
                   width={1000}
                   height={1000}
-                  alt="gallerina"
+                  alt="gallerina project"
                   className="object-cover md:top-2 h-64 md:h-72 md:absolute"
                 />
                 <a
@@ -93,7 +93,7 @@ export default function Content() {
                 </a>
                 <Image
                   src="/images/gallerina.png"
-                  alt="gallerina gif"
+                  alt="gallerina project gif"
                   width={1000}
                   height={1000}
                   className="object-cover grayscale hidden md:block h-72 top-2 absolute z-10 hover:opacity-0"
@@ -132,7 +132,7 @@ export default function Content() {
                   src="/images/keyboard32.gif"
                   width={1000}
                   height={1000}
-                  alt="keyboard-project"
+                  alt="keyboard project"
                   className="object-cover h-60 md:top-2 md:absolute"
                 />
                 <div className="relative">
@@ -153,7 +153,7 @@ export default function Content() {
                 </div>
                 <Image
                   src="/images/keyboard-frame1.jpeg"
-                  alt="keyboard-project"
+                  alt="keyboard project gif"
                   width={1000}
                   height={1000}
                   className="object-cover grayscale h-60 top-2 hidden md:block md:absolute z-10 hover:opacity-0"
@@ -187,7 +187,7 @@ export default function Content() {
                   src="/images/nextblog.gif"
                   width={1000}
                   height={1000}
-                  alt="todos-project"
+                  alt="nextjs project"
                   className="object-cover h-64 md:absolute"
                 />
                 <a
@@ -206,7 +206,7 @@ export default function Content() {
                 </a>
                 <Image
                   src="/images/nextblog.jpg"
-                  alt="todos-project"
+                  alt="nextjs project gif"
                   width={1000}
                   height={1000}
                   className="object-cover grayscale h-64 hidden md:block md:absolute z-10 hover:opacity-0"
@@ -252,13 +252,13 @@ export default function Content() {
               src="/images/profile1.png"
               width={1000}
               height={1000}
-              alt="profile"
+              alt="profile picture"
               className="object-cover w-80 h-80 mb-10"
             />
           </div>
           <Contact />
         </div>
-      </div>
+      </main>
     </>
   )
 }

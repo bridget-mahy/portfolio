@@ -94,12 +94,12 @@ export default function Contact() {
               className="p-1 font-Roboto font-thin outline-none bg-white rounded-sm"
               type="text"
               onChange={handleInputChange}
-              name="name"
+              id="name"
               value={formData.name}
             ></input>
             <label
               className={`${styles.whitetextshadow} text-xl text-white shadow-m font-Roboto font-thin`}
-              htmlFor="name"
+              htmlFor="contact"
             >
               contact
             </label>
@@ -107,20 +107,20 @@ export default function Contact() {
               required
               className="p-1 font-Roboto font-thin md:text-md outline-none bg-white rounded-sm"
               type="text"
-              name="contact"
+              id="contact"
               value={formData.contact}
               placeholder="example@gmail.com or 555-555-5555"
               onChange={handleInputChange}
             ></input>
             <label
               className={`${styles.whitetextshadow} text-xl text-white shadow-m font-Roboto font-thin`}
-              htmlFor="name"
+              htmlFor="message"
             >
               message
             </label>
             <textarea
               className="p-1 h-32 w-full overflow-clip outline-none font-Roboto font-thin bg-white rounded-sm"
-              name="message"
+              id="message"
               required
               onChange={handleInputChange}
               value={formData.message}

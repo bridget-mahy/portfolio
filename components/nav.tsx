@@ -60,6 +60,7 @@ export default function Nav() {
             href="/BridgetMahy-Resume.pdf"
             download="bmahy.pdf"
             className={`${styles.hover} text-slate-700 opacity-60 font-Header font-black my-2`}
+            aria-label="Download CV (PDF)"
           >
             CV
           </a>
@@ -68,9 +69,12 @@ export default function Nav() {
           </a>
           <Linkedin />
         </div>
-        {/* <div> hamburger button goes here? </div> */}
+        {/* hamburger button goes here */}
         <div className="md:hidden block slate-700 font-thin">
-          <button onClick={() => setOpen(!open)}>
+          <button
+            onClick={() => setOpen(!open)}
+            aria-label={open ? 'Nav open' : 'Nav closed'}
+          >
             {' '}
             <FontAwesomeIcon
               className="text-2xl opacity-60"

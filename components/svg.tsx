@@ -12,6 +12,8 @@ export function Github({ isLight, nav }: Props) {
         <div className="hidden group-hover:block bg-pink-200 left-1 margin opacity-60 p-3 blur absolute inset-0"></div>
       )}
       <svg
+        role="img"
+        aria-hidden="true"
         className={`w-8 h-8 m-2 fill-current ${
           isLight
             ? 'md:text-blue-100 z-30 md:hover:text-sky-50 md:opacity-100 opacity-60 text-slate-700'
@@ -20,6 +22,8 @@ export function Github({ isLight, nav }: Props) {
         viewBox="0 0 48 48"
         xmlns="http://www.w3.org/2000/svg"
       >
+        <title>Github Icon</title>
+        <desc>Github homepage/links to project code</desc>
         <path
           fillRule="evenodd"
           clipRule="evenodd"
@@ -34,6 +38,8 @@ export function Web({ isLight, nav }: Props) {
   return (
     <div className="group md:relative">
       <svg
+        role="img"
+        aria-hidden="true"
         className={`stroke-current absolute mx-2 my-1 left-10 h-10 w-10 ${
           isLight
             ? 'md:text-blue-100 z-30 md:hover:text-sky-50 md:opacity-100 text-slate-700 opacity-60'
@@ -43,6 +49,8 @@ export function Web({ isLight, nav }: Props) {
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
+        <title>Website Icon</title>
+        <desc>link to deployed project website</desc>
         <circle cx="12" cy="12" r="8" strokeWidth="2" />
         <ellipse cx="12" cy="12" rx="3" ry="8" strokeWidth="2" />
         <path d="M4 12H20" strokeWidth="2" strokeLinecap="round" />
@@ -67,6 +75,8 @@ export function Linkedin() {
       >
         <div className="hidden group-hover:block bg-pink-200 opacity-60 blur absolute z-0 inset-1"></div>
         <svg
+          role="img"
+          aria-hidden="true"
           className={`w-8 h-8 m-2 relative fill-current text-slate-700 z-20`}
           width="48"
           height="48"
@@ -74,6 +84,8 @@ export function Linkedin() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
+          <title>LinkedIn Icon</title>
+          <desc>linkedIn profile for Bridget Mahy</desc>
           <g clipPath="url(#clip0_17_68)">
             <path
               d="M44.4469 0H3.54375C1.58437 0 0 1.54688 0 3.45938V44.5312C0 46.4437 1.58437 48 3.54375 48H44.4469C46.4062 48 48 46.4438 48 44.5406V3.45938C48 1.54688 46.4062 0 44.4469 0ZM14.2406 40.9031H7.11563V17.9906H14.2406V40.9031ZM10.6781 14.8688C8.39062 14.8688 6.54375 13.0219 6.54375 10.7437C6.54375 8.46562 8.39062 6.61875 10.6781 6.61875C12.9563 6.61875 14.8031 8.46562 14.8031 10.7437C14.8031 13.0125 12.9563 14.8688 10.6781 14.8688ZM40.9031 40.9031H33.7875V29.7656C33.7875 27.1125 33.7406 23.6906 30.0844 23.6906C26.3812 23.6906 25.8187 26.5875 25.8187 29.5781V40.9031H18.7125V17.9906H25.5375V21.1219H25.6312C26.5781 19.3219 28.9031 17.4188 32.3625 17.4188C39.5719 17.4188 40.9031 22.1625 40.9031 28.3313V40.9031Z"
