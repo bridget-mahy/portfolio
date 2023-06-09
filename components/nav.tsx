@@ -77,7 +77,7 @@ export default function Nav() {
           >
             {' '}
             <FontAwesomeIcon
-              className="text-2xl opacity-60"
+              className="text-2xl opacity-60 text-black"
               icon={open ? faX : faBars}
             />
           </button>
