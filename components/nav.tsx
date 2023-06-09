@@ -59,7 +59,7 @@ export default function Nav() {
           <a
             href="/BridgetMahy-Resume.pdf"
             download="bmahy.pdf"
-            className={`${styles.hover} text-slate-700 opacity-60 font-Header font-black my-2`}
+            className={`${styles.hover} text-slate-700 opacity-60 font-Header mr-1.5 mt-3 font-black my-2`}
             aria-label="Download CV (PDF)"
           >
             CV
