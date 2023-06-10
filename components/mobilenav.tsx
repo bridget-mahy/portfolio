@@ -33,7 +33,7 @@ export default function FullscreenNav({ onClose }: NavProps) {
           CONTACT
         </a>
         <a
-          href="/BridgetMahy-Resume.pdf"
+          href="/bmahy.pdf"
           download="bmahy.pdf"
           className="text-6xl text-slate-700 opacity-70 font-thin tracking-wide mb-4"
           aria-label="Download CV (PDF)"

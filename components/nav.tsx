@@ -57,7 +57,7 @@ export default function Nav() {
         </div>
         <div className="md:flex items-center hidden">
           <a
-            href="/BridgetMahy-Resume.pdf"
+            href="/bmahy.pdf"
             download="bmahy.pdf"
             className={`${styles.hover} text-slate-700 opacity-60 font-Header mr-1.5 mt-3 font-black my-2`}
             aria-label="Download CV (PDF)"
